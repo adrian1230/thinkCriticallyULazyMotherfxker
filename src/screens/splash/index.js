@@ -11,9 +11,13 @@ Icon.loadFont();
 const Splash = () => {
     const pagerRef = useRef(null);
 
+    const handlePageChange = pageNumber => {
+        pagerRef.current.setPage(pageNumber);
+    };
+
     return (
         <View style={{flex:1}}>
-            <ViewPager style={{flex:1}}>
+            <ViewPager style={{flex:1}} initialPage={0} ref={pagerRef}>
                 <View key="1">
                     <View                  
                         style={{
@@ -43,17 +47,13 @@ const Splash = () => {
                         // @ts-ignore
                         RBtnLabel="Go!"
                         // @ts-ignore
-                        RBtnPress={()=>true}
+                        RBtnPress={()=>{
+                            handlePageChange(1);
+                        }}
                     />
                 </View>
                 <View key="2">
                     <Explore />
-                    <Footer 
-                        // @ts-ignore
-                        RBtnLabel="Go!"
-                        // @ts-ignore
-                        RBtnPress={()=>true}
-                    />
                 </View>
             </ViewPager>
         </View>
