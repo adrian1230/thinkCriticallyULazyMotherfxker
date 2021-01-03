@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import {Text, View, Image} from "react-native";
 import ViewPager from "@react-native-community/viewpager";
 import Icon from 'react-native-vector-icons/FontAwesome';
 import {icons} from '../../../constants/index';
+import Footer from '../../components/Footer';
+import Explore from '../explore/index'
 
 Icon.loadFont();
 
 const Splash = () => {
+    const pagerRef = useRef(null);
+
     return (
         <View style={{flex:1}}>
             <ViewPager style={{flex:1}}>
@@ -35,9 +39,21 @@ const Splash = () => {
                             </Text>
                         </View>
                     </View>
+                    <Footer 
+                        // @ts-ignore
+                        RBtnLabel="Go!"
+                        // @ts-ignore
+                        RBtnPress={()=>true}
+                    />
                 </View>
                 <View key="2">
-                    <Text>123</Text>
+                    <Explore />
+                    <Footer 
+                        // @ts-ignore
+                        RBtnLabel="Go!"
+                        // @ts-ignore
+                        RBtnPress={()=>true}
+                    />
                 </View>
             </ViewPager>
         </View>

@@ -11,10 +11,10 @@ const RoundedBtn = ({label, onPress}) => {
                 <Text 
                     style={{
                         fontSize:25,
-                        color:'lightblue',
+                        color:'blue',
                         fontWeight: 'bold'
-                        }
-                }>
+                    }}
+                >
                     {label}
                 </Text>
             </TouchableOpacity>
