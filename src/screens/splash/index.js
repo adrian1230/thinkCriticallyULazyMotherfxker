@@ -36,6 +36,9 @@ const Splash = () => {
                         </View>
                     </View>
                 </View>
+                <View key="2">
+                    <Text>123</Text>
+                </View>
             </ViewPager>
         </View>
     );
