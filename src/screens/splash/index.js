@@ -1,7 +1,8 @@
 import React from 'react';
-import {Text, View} from "react-native";
+import {Text, View, Image} from "react-native";
 import ViewPager from "@react-native-community/viewpager";
 import Icon from 'react-native-vector-icons/FontAwesome';
+import {icons} from '../../../constants/index';
 
 Icon.loadFont();
 
@@ -17,16 +18,20 @@ const Splash = () => {
                             alignItems: 'center',
                         }}
                     >
-                        <Icon 
-                            name="shopping-cart"
-                            size={155}
-                            color="brown" 
+                        <Image
+                            source={icons.orezaar} 
+                            resizeMode="cover"
+                            style={{
+                                width: 175,
+                                height: 175,
+                                borderRadius: 15
+                            }}
                         />
                         <View style={{ marginTop: 16 }}>
                             <Text
-                                style={{ fontSize: 24, fontWeight: 'bold', color: 'black' }}
+                                style={{ fontSize: 24, fontWeight: 'bold', color: 'brown' }}
                             >
-                                Ore Zaar
+                                MotherFuxker
                             </Text>
                         </View>
                     </View>

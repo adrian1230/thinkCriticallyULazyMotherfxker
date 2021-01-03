@@ -16,24 +16,13 @@ import {
   StatusBar,
 } from 'react-native';
 
+import Splash from './src/screens/splash/index';
+
 const App = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
-        <ScrollView
-          contentInsetAdjustmentBehavior="automatic"
-          style={styles.scrollView}>
-          <View style={styles.body}>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>OrezaarExplore</Text>
-              <Text style={styles.sectionDescription}>
-                Edit to change this screen and then come back to see your edits.
-              </Text>
-            </View>
-          </View>
-        </ScrollView>
-      </SafeAreaView>
+      <Splash />
     </>
   );
 };
