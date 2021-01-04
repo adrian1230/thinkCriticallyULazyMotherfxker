@@ -6,12 +6,12 @@ const Explore = ({ navigation }) => {
         <SafeAreaView>
             <View>
                 <Text>Explore</Text>
-                <Button
+                {/* <Button
                     title="Cart"
                     onPress={
                         () => navigation.navigate('Cart')
                     } 
-                />
+                /> */}
             </View>
         </SafeAreaView>
     );

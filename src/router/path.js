@@ -21,8 +21,11 @@ const RollerDraw = (props) => {
     };
 
     return (
-        <View style={{height:'100%'}}>
-            <TouchableOpacity onPress={()=> toggle()} style={{height:'100%'}}>
+        <View style={{ flexDirection: 'row' }}>
+            <TouchableOpacity
+                onPress={()=> toggle()} 
+                style={{height:'100%'}}
+            >
                 <Image 
                     source={icons.orezaar} 
                     resizeMode="cover"

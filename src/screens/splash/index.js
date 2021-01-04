@@ -4,7 +4,6 @@ import ViewPager from "@react-native-community/viewpager";
 import Icon from 'react-native-vector-icons/FontAwesome';
 import {icons} from '../../../constants/index';
 import Footer from '../../components/Footer';
-import Explore from '../explore/index';
 import Path from '../../router/path';
 
 Icon.loadFont();
