@@ -1,1 +1,1 @@
-# thinkCriticallyULazyMotherfxker
+# Lazy Template
