@@ -4,7 +4,7 @@ import ViewPager from "@react-native-community/viewpager";
 import Icon from 'react-native-vector-icons/FontAwesome';
 import {icons} from '../../../constants/index';
 import Footer from '../../components/Footer';
-import Explore from '../explore/index'
+import Explore from '../explore/index';
 
 Icon.loadFont();
 
@@ -45,7 +45,7 @@ const Splash = () => {
                     </View>
                     <Footer 
                         // @ts-ignore
-                        RBtnLabel="Go!"
+                        RBtnLabel="Continue"
                         // @ts-ignore
                         RBtnPress={()=>{
                             handlePageChange(1);
@@ -53,6 +53,40 @@ const Splash = () => {
                     />
                 </View>
                 <View key="2">
+                    <View                  
+                        style={{
+                            flex: 1,
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                        }}
+                    >
+                        <Image
+                            source={icons.go_shopping} 
+                            resizeMode="cover"
+                            style={{
+                                width: 175,
+                                height: 175,
+                                borderRadius: 15
+                            }}
+                        />
+                        <View style={{ marginTop: 16 }}>
+                            <Text
+                                style={{ fontSize: 24, fontWeight: 'bold', color: 'brown' }}
+                            >
+                                Get Up and Move!
+                            </Text>
+                        </View>
+                    </View>
+                    <Footer 
+                        // @ts-ignore
+                        RBtnLabel="Go!"
+                        // @ts-ignore
+                        RBtnPress={()=>{
+                            handlePageChange(2);
+                        }}
+                    />
+                </View>
+                <View key="3">
                     <Explore />
                 </View>
             </ViewPager>
