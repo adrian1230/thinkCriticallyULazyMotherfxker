@@ -1,11 +1,13 @@
-import React from 'react';
-import {View,Text} from 'react-native';
+import * as React from 'react';
+import {View,SafeAreaView,Text} from 'react-native';
 
-const Profile = () => {
+const Profile = ({ navigation }) => {
     return (
-        <View>
-            <Text>profile</Text>
-        </View>
+        <SafeAreaView>
+            <View>
+                <Text>Profile</Text>
+            </View>
+        </SafeAreaView>
     );
 }
 

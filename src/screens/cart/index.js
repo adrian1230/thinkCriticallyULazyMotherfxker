@@ -1,11 +1,13 @@
-import React from 'react';
-import {View,Text} from 'react-native';
+import * as React from 'react';
+import {View,SafeAreaView,Text} from 'react-native';
 
-const Cart = () => {
+const Cart = ({ navigation }) => {
     return (
-        <View>
-            <Text>Cart</Text>
-        </View>
+        <SafeAreaView>
+            <View>
+                <Text>Cart</Text>
+            </View>
+        </SafeAreaView>
     );
 }
 
