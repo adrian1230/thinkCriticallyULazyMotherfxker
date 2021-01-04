@@ -5,6 +5,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import {icons} from '../../../constants/index';
 import Footer from '../../components/Footer';
 import Explore from '../explore/index';
+import Path from '../../router/path';
 
 Icon.loadFont();
 
@@ -87,7 +88,7 @@ const Splash = () => {
                     />
                 </View>
                 <View key="3">
-                    <Explore />
+                    <Path />
                 </View>
             </ViewPager>
         </View>

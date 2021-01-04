@@ -9,7 +9,7 @@ const Explore = ({ navigation }) => {
                 <Button
                     title="Cart"
                     onPress={
-                        () => navigation.navigate('Cart');
+                        () => navigation.navigate('Cart')
                     } 
                 />
             </View>

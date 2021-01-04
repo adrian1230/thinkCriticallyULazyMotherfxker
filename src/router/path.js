@@ -21,15 +21,16 @@ const RollerDraw = (props) => {
     };
 
     return (
-        <View>
-            <TouchableOpacity>
+        <View style={{height:'100%'}}>
+            <TouchableOpacity onPress={()=> toggle()} style={{height:'100%'}}>
                 <Image 
-                    source={icons.navi} 
+                    source={icons.orezaar} 
                     resizeMode="cover"
                     style={{
-                        width: 25,
-                        height: 25,
-                        borderRadius: 15
+                        width: 50,
+                        height: 50,
+                        marginTop: 3,
+                        marginLeft: 5
                     }}
                 />
             </TouchableOpacity>
