@@ -12,7 +12,6 @@ import Profile from '../screens/profile/index';
 // import {icons} from '../../constants/index';
 import 'react-native-gesture-handler';
 // import { DrawerActions } from "react-navigation";
-import { NativeScreenContainer } from 'react-native-screens';
 
 // const Stack = createStackNavigator();
 const Drawer = createDrawerNavigator();

@@ -8,7 +8,6 @@
 
 import React from 'react';
 import {
-  StyleSheet,
   StatusBar,
 } from 'react-native';
 
@@ -22,8 +21,5 @@ const App = () => {
     </>
   );
 };
-
-const styles = StyleSheet.create({
-});
 
 export default App;
