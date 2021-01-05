@@ -20,7 +20,7 @@ const Tabs = createBottomTabNavigator();
 //     headerBackTitle: "Back",
 // };
 
-function ExploreTitle({navigation}) {
+function ExploreTitle() {
     return (
         <View style={{
             flexDirection: 'row',
@@ -33,12 +33,12 @@ function ExploreTitle({navigation}) {
                 source={icons.explore}
             />
             <View
-                style={{marginTop:8}}
+                style={{marginTop:8 }}
             >
                 <Button
                     title="Cart"
                     onPress={
-                        () => navigation.navigate('Cart')
+                        () => {}
                     } 
                 />
             </View>
@@ -63,7 +63,7 @@ function ProfileTitle() {
     )
 }
 
-const ExploreStackNavigator = ({navigation}) => {
+const ExploreStackNavigator = () => {
     return (
         <Stack.Navigator screenOptions={{headerTitle: props => <ExploreTitle /> }}>
             <Stack.Screen name="Explore" component={Explore} />
