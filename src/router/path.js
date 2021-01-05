@@ -120,10 +120,12 @@ const Drawer = createDrawerNavigator();
 
 function Path() {
     return(
-        <Drawer.Navigator initialRouteName="Explore">
-            <Drawer.Screen name="Explore" component={Explore} />
-            <Drawer.Screen name="Profile" component={Profile} />
-        </Drawer.Navigator> 
+        <NavigationContainer>
+            <Drawer.Navigator initialRouteName="Explore">
+                <Drawer.Screen name="Explore" component={Explore} />
+                <Drawer.Screen name="Profile" component={Profile} />
+            </Drawer.Navigator> 
+        </NavigationContainer>
     );
 }
 
