@@ -5,22 +5,50 @@ import Explore from '../screens/explore/index';
 import Chat from "../screens/message/index";
 import Profile from '../screens/profile/index';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import {Image, Text, View} from "react-native";
+import {icons} from '../../constants/index';
 
 const Stack = createStackNavigator();
 
 const Tabs = createBottomTabNavigator();
 
-const screenOptionStyle = {
-    headerStyle: {
-      backgroundColor: "red",
-    },
-    headerTintColor: "white",
-    headerBackTitle: "Back",
-};
+// const screenOptionStyle = {
+//     headerStyle: {
+//       backgroundColor: "red",
+//     },
+//     headerTintColor: "white",
+//     headerBackTitle: "Back",
+// };
+
+function ExploreTitle() {
+    return (
+        <Image 
+            style={{width:50,height:50}}
+            source={icons.explore}
+        />
+    )
+}
+
+function ChatTitle() {
+    return (
+        <Image 
+            style={{width:50,height:50}}
+            source={icons.chat}
+        />
+    )
+}
+
+function ProfileTitle() {
+    return (
+        <View>
+            <Text>Profile</Text>
+        </View>
+    )
+}
 
 const ExploreStackNavigator = () => {
     return (
-        <Stack.Navigator screenOptions={screenOptionStyle}>
+        <Stack.Navigator screenOptions={{headerTitle: props => <ExploreTitle /> }}>
             <Stack.Screen name="Explore" component={Explore} />
             <Stack.Screen name="Profile" component={Profile} />
         </Stack.Navigator>
@@ -29,7 +57,7 @@ const ExploreStackNavigator = () => {
 
 const ProfileStackNavigator = () => {
     return (
-        <Stack.Navigator screenOptions={screenOptionStyle}>
+        <Stack.Navigator screenOptions={{headerTitle: props => <ProfileTitle /> }}>
             <Stack.Screen name="Profile" component={Profile} />
         </Stack.Navigator>
     )
@@ -37,7 +65,7 @@ const ProfileStackNavigator = () => {
 
 const ChatStackNavigator = () => {
     return (
-        <Stack.Navigator screenOptions={screenOptionStyle}>
+        <Stack.Navigator screenOptions={{headerTitle: props => <ChatTitle /> }}>
             <Stack.Screen name="Chat" component={Chat} />
         </Stack.Navigator>
     )
