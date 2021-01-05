@@ -6,7 +6,13 @@ import Chat from "../screens/message/index";
 import Cart from "../screens/cart/index";
 import Profile from '../screens/profile/index';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-import {Image, Text, View, Button} from "react-native";
+import {
+    Image, 
+    Text, 
+    View, 
+    Button, 
+    TouchableOpacity
+} from "react-native";
 import {icons} from '../../constants/index';
 
 const Stack = createStackNavigator();
@@ -84,11 +90,22 @@ const ExploreStackNavigator = ({navigation}) => {
                             marginRight: 10
                         }}
                     >
-                        <Button 
+                        {/* <Button 
                             onPress={()=>navigation.navigate('Cart')}
                             title="Cart"
                             color="red"                    
-                        />
+                        /> */}
+                        <TouchableOpacity
+                            onPress={()=>navigation.navigate('Cart')}
+                        >
+                            <Image
+                                source={icons.cart} 
+                                style={{
+                                    width: 45,
+                                    height: 45
+                                }}
+                            />
+                        </TouchableOpacity>
                     </View>
                 ),
             }}
