@@ -1,47 +1,47 @@
 import * as React from 'react';
-import {
-    View,
-    TouchableOpacity,
-    Image
-} from 'react-native';
+// import {
+//     View,
+//     TouchableOpacity,
+//     Image
+// } from 'react-native';
 import {createDrawerNavigator} from '@react-navigation/drawer';
 import {NavigationContainer} from "@react-navigation/native";
-import {createStackNavigator} from '@react-navigation/stack';
+// import {createStackNavigator} from '@react-navigation/stack';
 import Explore from '../screens/explore/index';
 import Profile from '../screens/profile/index';
-import {icons} from '../../constants/index';
+// import {icons} from '../../constants/index';
 import 'react-native-gesture-handler';
-import { DrawerActions } from "react-navigation";
+// import { DrawerActions } from "react-navigation";
 import { NativeScreenContainer } from 'react-native-screens';
 
-const Stack = createStackNavigator();
+// const Stack = createStackNavigator();
 const Drawer = createDrawerNavigator();
 
-const RollerDraw = (props) => {
-    const toggle = () => {
-        props.navigationProps.toggle();
-    };
+// const RollerDraw = (props) => {
+//     const toggle = () => {
+//         props.navigationProps.toggle();
+//     };
 
-    return (
-        <View style={{ flexDirection: 'row' }}>
-            <TouchableOpacity
-                onPress={()=> toggle()} 
-                style={{height:'100%'}}
-            >
-                <Image 
-                    source={icons.orezaar} 
-                    resizeMode="cover"
-                    style={{
-                        width: 50,
-                        height: 50,
-                        marginTop: 3,
-                        marginLeft: 5
-                    }}
-                />
-            </TouchableOpacity>
-        </View>
-    );
-}
+//     return (
+//         <View style={{ flexDirection: 'row' }}>
+//             <TouchableOpacity
+//                 onPress={()=> toggle()} 
+//                 style={{height:'100%'}}
+//             >
+//                 <Image 
+//                     source={icons.orezaar} 
+//                     resizeMode="cover"
+//                     style={{
+//                         width: 50,
+//                         height: 50,
+//                         marginTop: 3,
+//                         marginLeft: 5
+//                     }}
+//                 />
+//             </TouchableOpacity>
+//         </View>
+//     );
+// }
 
 // function ExploreScreenStack({navigation}) {
 //     return (
