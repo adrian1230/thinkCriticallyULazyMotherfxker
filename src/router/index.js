@@ -6,8 +6,8 @@ import Path from './drawer';
 const Navigation = () => {
     return (
         <NavigationContainer>
-            {/* <BottomTabNavigator /> */}
-            <Path />
+            <BottomTabNavigator />
+            {/* <Path /> */}
         </NavigationContainer>
     )
 }
