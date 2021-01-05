@@ -4,7 +4,7 @@ import ViewPager from "@react-native-community/viewpager";
 import Icon from 'react-native-vector-icons/FontAwesome';
 import {icons} from '../../../constants/index';
 import Footer from '../../components/Footer';
-import Path from '../../router/path';
+import Navigation from '../../router';
 
 Icon.loadFont();
 
@@ -87,7 +87,8 @@ const Splash = () => {
                     />
                 </View>
                 <View key="3">
-                    <Path />
+                    {/* <Path /> */}
+                    <Navigation />
                 </View>
             </ViewPager>
         </View>
