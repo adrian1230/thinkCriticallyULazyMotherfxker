@@ -3,6 +3,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createStackNavigator } from "@react-navigation/stack";
 import Explore from '../screens/explore/index';
 import Chat from "../screens/message/index";
+import Cart from "../screens/cart/index";
 import Profile from '../screens/profile/index';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import {Image, Text, View, Button} from "react-native";
@@ -72,7 +73,7 @@ function ProfileTitle() {
     )
 }
 
-const ExploreStackNavigator = () => {
+const ExploreStackNavigator = ({navigation}) => {
     return (
         <Stack.Navigator 
             screenOptions={{
@@ -84,7 +85,7 @@ const ExploreStackNavigator = () => {
                         }}
                     >
                         <Button 
-                            onPress={()=>alert('hjk')}
+                            onPress={()=>navigation.navigate('Cart')}
                             title="Cart"
                             color="red"                    
                         />
@@ -93,7 +94,7 @@ const ExploreStackNavigator = () => {
             }}
         >
             <Stack.Screen name="Explore" component={Explore} />
-            {/* <Stack.Screen name="Profile" component={Profile} /> */}
+            <Stack.Screen name="Cart" component={Cart} />
         </Stack.Navigator>
     )
 }
