@@ -20,12 +20,29 @@ const Tabs = createBottomTabNavigator();
 //     headerBackTitle: "Back",
 // };
 
-function ExploreTitle() {
+function ExploreTitle({navigation}) {
     return (
-        <Image 
-            style={{width:120,height:50,alignSelf:'flex-start'}}
-            source={icons.explore}
-        />
+        <View style={{
+            flexDirection: 'row',
+            // display: 'flex',
+            justifyContent: 'space-between'
+
+        }}>
+            <Image 
+                style={{width:120,height:50,alignSelf:'flex-start'}}
+                source={icons.explore}
+            />
+            <View
+                style={{marginTop:8}}
+            >
+                <Button
+                    title="Cart"
+                    onPress={
+                        () => navigation.navigate('Cart')
+                    } 
+                />
+            </View>
+        </View>
     )
 }
 
@@ -46,7 +63,7 @@ function ProfileTitle() {
     )
 }
 
-const ExploreStackNavigator = () => {
+const ExploreStackNavigator = ({navigation}) => {
     return (
         <Stack.Navigator screenOptions={{headerTitle: props => <ExploreTitle /> }}>
             <Stack.Screen name="Explore" component={Explore} />
