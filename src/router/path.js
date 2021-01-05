@@ -6,14 +6,14 @@ import * as React from 'react';
 // } from 'react-native';
 import {createDrawerNavigator} from '@react-navigation/drawer';
 import {NavigationContainer} from "@react-navigation/native";
-// import {createStackNavigator} from '@react-navigation/stack';
+import {createStackNavigator} from '@react-navigation/stack';
 import Explore from '../screens/explore/index';
 import Profile from '../screens/profile/index';
 // import {icons} from '../../constants/index';
 import 'react-native-gesture-handler';
 // import { DrawerActions } from "react-navigation";
 
-// const Stack = createStackNavigator();
+const Stack = createStackNavigator();
 const Drawer = createDrawerNavigator();
 
 // const RollerDraw = (props) => {
@@ -120,12 +120,10 @@ const Drawer = createDrawerNavigator();
 
 function Path() {
     return(
-        <NavigationContainer>
-            <Drawer.Navigator initialRouteName="Explore">
-                <Drawer.Screen name="Explore" component={Explore} />
-                <Drawer.Screen name="Profile" component={Profile} />
-            </Drawer.Navigator> 
-        </NavigationContainer>
+        <Drawer.Navigator initialRouteName="Explore">
+            <Drawer.Screen name="Explore" component={Explore} />
+            <Drawer.Screen name="Profile" component={Profile} />
+        </Drawer.Navigator> 
     );
 }
 
