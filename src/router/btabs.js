@@ -20,29 +20,38 @@ const Tabs = createBottomTabNavigator();
 //     headerBackTitle: "Back",
 // };
 
-function ExploreTitle() {
-    return (
-        <View style={{
-            flexDirection: 'row',
-            // display: 'flex',
-            justifyContent: 'space-between'
+// function ExploreTitle() {
+//     return (
+//         <View style={{
+//             flexDirection: 'row',
+//             // display: 'flex',
+//             justifyContent: 'space-between'
 
-        }}>
-            <Image 
-                style={{width:120,height:50,alignSelf:'flex-start'}}
-                source={icons.explore}
-            />
-            <View
-                style={{marginTop:8 }}
-            >
-                <Button
-                    title="Cart"
-                    onPress={
-                        () => {}
-                    } 
-                />
-            </View>
-        </View>
+//         }}>
+//             <Image 
+//                 style={{width:120,height:50,alignSelf:'flex-start'}}
+//                 source={icons.explore}
+//             />
+//             <View
+//                 style={{marginTop:8 }}
+//             >
+//                 <Button
+//                     title="Cart"
+//                     onPress={
+//                         () => {}
+//                     } 
+//                 />
+//             </View>
+//         </View>
+//     )
+// }
+
+function ExploreTitle() {
+    return(
+        <Image
+            style={{width:120,height:50,alignSelf:'flex-start'}}
+            source={icons.explore}
+        />
     )
 }
 
@@ -65,7 +74,24 @@ function ProfileTitle() {
 
 const ExploreStackNavigator = () => {
     return (
-        <Stack.Navigator screenOptions={{headerTitle: props => <ExploreTitle /> }}>
+        <Stack.Navigator 
+            screenOptions={{
+                headerTitle: props => <ExploreTitle />,
+                headerRight: () => (
+                    <View 
+                        style={{
+                            marginRight: 10
+                        }}
+                    >
+                        <Button 
+                            onPress={()=>alert('hjk')}
+                            title="Cart"
+                            color="red"                    
+                        />
+                    </View>
+                ),
+            }}
+        >
             <Stack.Screen name="Explore" component={Explore} />
             {/* <Stack.Screen name="Profile" component={Profile} /> */}
         </Stack.Navigator>
