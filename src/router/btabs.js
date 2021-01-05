@@ -23,7 +23,7 @@ const Tabs = createBottomTabNavigator();
 function ExploreTitle() {
     return (
         <Image 
-            style={{width:50,height:50}}
+            style={{width:120,height:50,alignSelf:'center'}}
             source={icons.explore}
         />
     )
@@ -50,7 +50,7 @@ const ExploreStackNavigator = () => {
     return (
         <Stack.Navigator screenOptions={{headerTitle: props => <ExploreTitle /> }}>
             <Stack.Screen name="Explore" component={Explore} />
-            <Stack.Screen name="Profile" component={Profile} />
+            {/* <Stack.Screen name="Profile" component={Profile} /> */}
         </Stack.Navigator>
     )
 }
