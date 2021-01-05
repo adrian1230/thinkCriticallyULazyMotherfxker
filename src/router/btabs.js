@@ -5,7 +5,7 @@ import Explore from '../screens/explore/index';
 import Chat from "../screens/message/index";
 import Profile from '../screens/profile/index';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-import {Image, Text, View} from "react-native";
+import {Image, Text, View, Button} from "react-native";
 import {icons} from '../../constants/index';
 
 const Stack = createStackNavigator();
@@ -23,7 +23,7 @@ const Tabs = createBottomTabNavigator();
 function ExploreTitle() {
     return (
         <Image 
-            style={{width:120,height:50,alignSelf:'center'}}
+            style={{width:120,height:50,alignSelf:'flex-start'}}
             source={icons.explore}
         />
     )
