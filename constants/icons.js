@@ -3,11 +3,13 @@ export const go_shopping = require('../assets/shopping.png');
 export const navi = require('../assets/french.png');
 export const explore = require('../assets/explore.png');
 export const chat = require('../assets/chat.png');
+export const cart = require('../assets/cart.png');
 
 export default {
     orezaar,
     go_shopping,
     navi,
     explore,
-    chat
+    chat,
+    cart
 }
