@@ -5,7 +5,7 @@ const Explore = ({ navigation }) => {
     return (
         <SafeAreaView>
             <View>
-                <Text>Explore</Text>
+                {/* <Text>Explore</Text>
                 <View style={styles.btn}>
                     <Button
                         title="Profile"
@@ -13,7 +13,7 @@ const Explore = ({ navigation }) => {
                             () => navigation.navigate('Profile')
                         } 
                     />
-                </View>
+                </View> */}
             </View>
         </SafeAreaView>
     );
