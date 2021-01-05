@@ -11,34 +11,37 @@ import Explore from '../screens/explore/index';
 import Profile from '../screens/profile/index';
 import {icons} from '../../constants/index';
 import 'react-native-gesture-handler';
+import { withNavigation,DrawerActions } from "react-navigation";
 
 const Stack = createStackNavigator();
 const Drawer = createDrawerNavigator();
 
-const RollerDraw = (props) => {
-    const toggle = () => {
-        props.navigationProps.toggle();
+class RollerDraw extends React.PureComponent {
+    toggleDrawer = () => {
+        this.props.navigation.dispatch(DrawerActions.toggleDrawer())
     };
 
-    return (
-        <View style={{ flexDirection: 'row' }}>
-            <TouchableOpacity
-                onPress={()=> toggle()} 
-                style={{height:'100%'}}
-            >
-                <Image 
-                    source={icons.orezaar} 
-                    resizeMode="cover"
-                    style={{
-                        width: 50,
-                        height: 50,
-                        marginTop: 3,
-                        marginLeft: 5
-                    }}
-                />
-            </TouchableOpacity>
-        </View>
-    );
+    render() {
+        return (
+            <View style={{ flexDirection: 'row' }}>
+                <TouchableOpacity
+                    onPress={()=> this.toggleDrawer()} 
+                    style={{height:'100%'}}
+                >
+                    <Image 
+                        source={icons.orezaar} 
+                        resizeMode="cover"
+                        style={{
+                            width: 50,
+                            height: 50,
+                            marginTop: 3,
+                            marginLeft: 5
+                        }}
+                    />
+                </TouchableOpacity>
+            </View>
+        );
+    }
 }
 
 function ExploreScreenStack({navigation}) {
