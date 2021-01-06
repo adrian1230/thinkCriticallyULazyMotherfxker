@@ -1,10 +1,34 @@
 import * as React from 'react';
-import {View,Button,StyleSheet,SafeAreaView,Text} from 'react-native';
+import {
+    View,
+    Button,
+    StyleSheet,
+    SafeAreaView,
+    Text,
+    TextInput
+} from 'react-native';
 
 const Explore = ({ navigation }) => {
+    const state = {
+        search: '',
+    }
+
+    const [search, setSearch] = React.useState(0);
+
     return (
         <SafeAreaView>
             <View>
+                <TextInput
+                    style={{
+                        backgroundColor:'grey',
+                        width: '70%',
+                        alignSelf: 'center',
+                        borderRadius: 15,
+                        marginTop: 15
+                    }}
+                    onChangeText={()=>setSearch(search)} 
+                />
+                <Text>asd</Text>
                 {/* <Text>Explore</Text>
                 <View style={styles.btn}>
                     <Button
