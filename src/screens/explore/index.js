@@ -33,6 +33,7 @@ const Explore = ({ navigation,props }) => {
                         fontWeight: '600',
                         fontSize: 15
                     }}
+                    placeholder="Search"
                     // onChangeText={(search)=>this.setState({search})} 
                 />
                 <View 
