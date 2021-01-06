@@ -47,15 +47,18 @@ const Explore = ({ navigation,props }) => {
                 </View>
                 <ScrollView style={{
                     marginTop: 15,
-                    padding: 5,
-                    borderRadius: 20,
-                    height: '70%',
-                    backgroundColor: 'lightgray',
                     alignSelf:'center'
                     }}
                 >
-                    <Image source={images._1} style={styles.image_} />
-                    <View style={styles.Trapezoid}>
+                    <View style={{
+                        borderRadius: 20,
+                        padding: 25,
+                        height: '75%',
+                        backgroundColor: 'lightgray',
+                    }}>
+                        <Image source={images._1} style={styles.image_} />
+                        <View style={styles.Trapezoid}>
+                        </View>
                     </View>
                 </ScrollView>
                 {/* <Text>Explore</Text>
