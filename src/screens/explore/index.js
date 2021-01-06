@@ -5,7 +5,8 @@ import {
     SafeAreaView,
     Text,
     TextInput,
-    Image
+    Image,
+    ScrollView
 } from 'react-native';
 console.disableYellowBox = true;
 import {images} from '../../../constants/index';
@@ -39,12 +40,12 @@ const Explore = ({ navigation,props }) => {
                         width:'75%',
                         marginTop: 15,
                         alignSelf:'center',
-                        height:'3%',
+                        height:'1%',
                         backgroundColor:'lightgrey'
                     }}
                 >
                 </View>
-                <View style={{
+                <ScrollView style={{
                     marginTop: 15,
                     padding: 5,
                     borderRadius: 20,
@@ -56,7 +57,7 @@ const Explore = ({ navigation,props }) => {
                     <Image source={images._1} style={styles.image_} />
                     <View style={styles.Trapezoid}>
                     </View>
-                </View>
+                </ScrollView>
                 {/* <Text>Explore</Text>
                 <View style={styles.btn}>
                     <Button
