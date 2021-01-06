@@ -183,16 +183,6 @@ const Explore = ({ navigation }) => {
                     placeholder="Search"
                     // onChangeText={(search)=>this.setState({search})} 
                 />
-                <View 
-                    style={{
-                        width:'75%',
-                        marginTop: 15,
-                        alignSelf:'center',
-                        height:'1%',
-                        backgroundColor:'lightgrey'
-                    }}
-                >
-                </View>
                 <ScrollView style={{
                     marginTop: 15,
                     alignSelf:'center'
@@ -207,7 +197,7 @@ const Explore = ({ navigation }) => {
                                         borderRadius: 20,
                                         padding: 25,
                                         marginBottom: 20,
-                                        height: 295+100,
+                                        height: 395,
                                         backgroundColor: '#e6e8e6',
                                     }}
                                 >
@@ -235,6 +225,7 @@ const Explore = ({ navigation }) => {
                                 </View>
                         )
                     }
+                    <View style={{height:180}}></View>
                 </ScrollView>
             </View>
         </SafeAreaView>
