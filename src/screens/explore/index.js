@@ -198,17 +198,19 @@ const Explore = ({ navigation }) => {
                     alignSelf:'center'
                     }}
                 >
-                    {/* <View style={{
-                        borderRadius: 20,
-                        padding: 25,
-                        marginBottom: 20,
-                        height: 295+100,
-                        backgroundColor: '#e6e8e6',
-                    }}> */}
                     {
                         data_.map(
                             (val,ind) =>
-                                <View key={ind}>
+                                <View 
+                                    key={ind}
+                                    style={{
+                                        borderRadius: 20,
+                                        padding: 25,
+                                        marginBottom: 20,
+                                        height: 295+100,
+                                        backgroundColor: '#e6e8e6',
+                                    }}
+                                >
                                     <Text
                                         style={{
                                             fontWeight: '600',
@@ -233,39 +235,7 @@ const Explore = ({ navigation }) => {
                                 </View>
                         )
                     }
-                        {/* <Text
-                            style={{
-                                fontWeight: '700',
-                                fontSize: 25
-                            }}
-                        >
-                            BackPack
-                        </Text>
-                        <Image 
-                            source={images._2} 
-                            style={{
-                                position: 'relative',
-                                left: 35,
-                                width: 240,
-                                height: 240,
-                                zIndex: 2,
-                                top: 35,
-                            }}
-                            resizeMode="stretch" 
-                        />
-                        <View style={styles.Trapezoid}>
-                        </View> */}
-                    {/* </View> */}
                 </ScrollView>
-                {/* <Text>Explore</Text>
-                <View style={styles.btn}>
-                    <Button
-                        title="Profile"
-                        onPress={
-                            () => navigation.navigate('Profile')
-                        } 
-                    />
-                </View> */}
             </View>
         </SafeAreaView>
     );
@@ -285,12 +255,6 @@ const styles = StyleSheet.create({
         bottom: 120,
         zIndex: 1
     },
-    // btn: {
-    //     width: '50%',
-    //     alignSelf: 'center',
-    //     marginTop: 15,
-    //     borderRadius: 25
-    // },
 })
 
 export default Explore;
