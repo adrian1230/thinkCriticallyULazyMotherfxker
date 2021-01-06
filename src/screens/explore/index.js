@@ -1,18 +1,21 @@
 import * as React from 'react';
 import {
     View,
-    Button,
     StyleSheet,
     SafeAreaView,
     Text,
-    TextInput
+    TextInput,
+    Image
 } from 'react-native';
 console.disableYellowBox = true;
-
+import {images} from '../../../constants/index';
+ 
 const Explore = ({ navigation,props }) => {
     const state = {
         search: '',
     }
+
+    const {width,height} = Image.resolveAssetSource(images._2);
 
     return (
         <SafeAreaView>
@@ -42,7 +45,8 @@ const Explore = ({ navigation,props }) => {
                 >
                 </View>
                 <View style={{marginTop: 15,alignSelf:'center'}}>
-                    <Text>asd</Text>
+                    <Text>{width} {height}</Text>
+                    <View style={styles.TrapezoidStyle} />
                 </View>
                 {/* <Text>Explore</Text>
                 <View style={styles.btn}>
@@ -64,6 +68,17 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
         marginTop: 15,
         borderRadius: 25
+    },
+    TrapezoidStyle: {
+        width: 250,
+        height: 0,
+        marginTop: 10,
+        borderBottomColor: "red",
+        borderBottomWidth: 100,
+        borderLeftWidth: 0,
+        borderRightWidth: 190,
+        borderRightColor: 'transparent',
+        borderLeftColor: 'transparent',
     }
 })
 
