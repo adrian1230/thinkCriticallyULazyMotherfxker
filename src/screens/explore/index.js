@@ -41,6 +41,9 @@ const Explore = ({ navigation,props }) => {
                     }}
                 >
                 </View>
+                <View style={{marginTop: 15,alignSelf:'center'}}>
+                    <Text>asd</Text>
+                </View>
                 {/* <Text>Explore</Text>
                 <View style={styles.btn}>
                     <Button
