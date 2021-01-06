@@ -54,6 +54,7 @@ const Explore = ({ navigation,props }) => {
                     <View style={{
                         borderRadius: 20,
                         padding: 25,
+                        marginBottom: 20,
                         height: '75%',
                         backgroundColor: 'lightgray',
                     }}>
