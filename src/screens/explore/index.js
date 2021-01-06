@@ -7,13 +7,12 @@ import {
     Text,
     TextInput
 } from 'react-native';
+console.disableYellowBox = true;
 
-const Explore = ({ navigation }) => {
+const Explore = ({ navigation,props }) => {
     const state = {
         search: '',
     }
-
-    const [search, setSearch] = React.useState(0);
 
     return (
         <SafeAreaView>
@@ -24,9 +23,13 @@ const Explore = ({ navigation }) => {
                         width: '70%',
                         alignSelf: 'center',
                         borderRadius: 15,
-                        marginTop: 15
+                        marginTop: 15,
+                        paddingLeft: 20,
+                        color: 'white',
+                        fontWeight: '600',
+                        fontSize: 15
                     }}
-                    onChangeText={()=>setSearch(search)} 
+                    // onChangeText={(search)=>this.setState({search})} 
                 />
                 <Text>asd</Text>
                 {/* <Text>Explore</Text>
