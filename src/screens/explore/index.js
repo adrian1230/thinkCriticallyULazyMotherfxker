@@ -198,14 +198,42 @@ const Explore = ({ navigation }) => {
                     alignSelf:'center'
                     }}
                 >
-                    <View style={{
+                    {/* <View style={{
                         borderRadius: 20,
                         padding: 25,
                         marginBottom: 20,
                         height: 295+100,
                         backgroundColor: '#e6e8e6',
-                    }}>
-                        <Text
+                    }}> */}
+                    {
+                        data_.map(
+                            (val,ind) =>
+                                <View key={ind}>
+                                    <Text
+                                        style={{
+                                            fontWeight: '600',
+                                            fontSize: 23
+                                        }}
+                                    >
+                                        {val.name}
+                                    </Text>
+                                    <Image
+                                        source={val.img}
+                                        style={{
+                                            position: 'relative',
+                                            left: 35,
+                                            width: 240,
+                                            height: 240,
+                                            zIndex: 2,
+                                            top: 35,
+                                        }} 
+                                        resizeMode="stretch"
+                                    />
+                                    <View style={styles.Trapezoid}></View>
+                                </View>
+                        )
+                    }
+                        {/* <Text
                             style={{
                                 fontWeight: '700',
                                 fontSize: 25
@@ -226,8 +254,8 @@ const Explore = ({ navigation }) => {
                             resizeMode="stretch" 
                         />
                         <View style={styles.Trapezoid}>
-                        </View>
-                    </View>
+                        </View> */}
+                    {/* </View> */}
                 </ScrollView>
                 {/* <Text>Explore</Text>
                 <View style={styles.btn}>
