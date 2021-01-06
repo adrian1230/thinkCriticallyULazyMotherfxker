@@ -42,7 +42,9 @@ const Explore = ({ navigation }) => {
                     {
                         stats.data_.map(
                             (val,ind) =>
-                                <TouchableOpacity key={ind}>
+                                <TouchableOpacity 
+                                    key={ind}
+                                >
                                     <View 
                                         style={{
                                             borderRadius: 20,
@@ -66,7 +68,7 @@ const Explore = ({ navigation }) => {
                                                 position: 'relative',
                                                 left: 35,
                                                 width: 240,
-                                                height: 240,
+                                                height: 270,
                                                 zIndex: 2,
                                                 top: 35,
                                             }} 
