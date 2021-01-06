@@ -6,7 +6,8 @@ import {
     Text,
     TextInput,
     Image,
-    ScrollView
+    ScrollView,
+    TouchableOpacity
 } from 'react-native';
 import {stats} from '../../../constants/index';
  
@@ -41,38 +42,39 @@ const Explore = ({ navigation }) => {
                     {
                         stats.data_.map(
                             (val,ind) =>
-                                <View 
-                                    key={ind}
-                                    style={{
-                                        borderRadius: 20,
-                                        padding: 25,
-                                        marginBottom: 20,
-                                        height: 395,
-                                        backgroundColor: '#e6e8e6',
-                                    }}
-                                >
-                                    <Text
+                                <TouchableOpacity key={ind}>
+                                    <View 
                                         style={{
-                                            fontWeight: '600',
-                                            fontSize: 23
+                                            borderRadius: 20,
+                                            padding: 25,
+                                            marginBottom: 20,
+                                            height: 395,
+                                            backgroundColor: '#e6e8e6',
                                         }}
                                     >
-                                        {val.name}
-                                    </Text>
-                                    <Image
-                                        source={val.img}
-                                        style={{
-                                            position: 'relative',
-                                            left: 35,
-                                            width: 240,
-                                            height: 240,
-                                            zIndex: 2,
-                                            top: 35,
-                                        }} 
-                                        resizeMode="stretch"
-                                    />
-                                    <View style={styles.Trapezoid}></View>
-                                </View>
+                                        <Text
+                                            style={{
+                                                fontWeight: '600',
+                                                fontSize: 23
+                                            }}
+                                        >
+                                            {val.name}
+                                        </Text>
+                                        <Image
+                                            source={val.img}
+                                            style={{
+                                                position: 'relative',
+                                                left: 35,
+                                                width: 240,
+                                                height: 240,
+                                                zIndex: 2,
+                                                top: 35,
+                                            }} 
+                                            resizeMode="stretch"
+                                        />
+                                        <View style={styles.Trapezoid}></View>
+                                    </View>
+                                </TouchableOpacity>
                         )
                     }
                     <View style={{height:180}}></View>
