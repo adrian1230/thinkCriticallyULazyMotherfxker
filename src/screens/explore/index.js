@@ -70,12 +70,12 @@ const styles = StyleSheet.create({
     },
     Trapezoid: {
         width: 250,
-        height: 0,
         marginTop: 10,
-        borderBottomColor: "red",
-        borderBottomWidth: 100,
+        borderBottomColor: "gray",
+        borderBottomWidth: 110,
         borderLeftWidth: 0,
-        borderRightWidth: 170,
+        borderRightWidth: 155,
+        borderRadius: 20,
         borderRightColor: 'transparent',
         borderLeftColor: 'transparent',
     }
