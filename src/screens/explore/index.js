@@ -45,8 +45,7 @@ const Explore = ({ navigation,props }) => {
                 >
                 </View>
                 <View style={{marginTop: 15,alignSelf:'center'}}>
-                    <Text>{width} {height}</Text>
-                    <View style={styles.TrapezoidStyle} />
+                    <View style={styles.Trapezoid} />
                 </View>
                 {/* <Text>Explore</Text>
                 <View style={styles.btn}>
@@ -69,14 +68,14 @@ const styles = StyleSheet.create({
         marginTop: 15,
         borderRadius: 25
     },
-    TrapezoidStyle: {
+    Trapezoid: {
         width: 250,
         height: 0,
         marginTop: 10,
         borderBottomColor: "red",
         borderBottomWidth: 100,
         borderLeftWidth: 0,
-        borderRightWidth: 190,
+        borderRightWidth: 170,
         borderRightColor: 'transparent',
         borderLeftColor: 'transparent',
     }
