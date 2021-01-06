@@ -44,8 +44,18 @@ const Explore = ({ navigation,props }) => {
                     }}
                 >
                 </View>
-                <View style={{marginTop: 15,alignSelf:'center'}}>
-                    <View style={styles.Trapezoid} />
+                <View style={{
+                    marginTop: 15,
+                    padding: 5,
+                    borderRadius: 20,
+                    height: '70%',
+                    backgroundColor: 'lightgray',
+                    alignSelf:'center'
+                    }}
+                >
+                    <Image source={images._1} style={styles.image_} />
+                    <View style={styles.Trapezoid}>
+                    </View>
                 </View>
                 {/* <Text>Explore</Text>
                 <View style={styles.btn}>
@@ -62,15 +72,14 @@ const Explore = ({ navigation,props }) => {
 }
 
 const styles = StyleSheet.create({
-    btn: {
-        width: '50%',
-        alignSelf: 'center',
-        marginTop: 15,
-        borderRadius: 25
-    },
+    // btn: {
+    //     width: '50%',
+    //     alignSelf: 'center',
+    //     marginTop: 15,
+    //     borderRadius: 25
+    // },
     Trapezoid: {
         width: 250,
-        marginTop: 10,
         borderBottomColor: "gray",
         borderBottomWidth: 110,
         borderLeftWidth: 0,
@@ -78,6 +87,12 @@ const styles = StyleSheet.create({
         borderRadius: 20,
         borderRightColor: 'transparent',
         borderLeftColor: 'transparent',
+        position: 'relative',
+        bottom: 100,
+    },
+    image_: {
+        position: 'relative',
+        left: 15
     }
 })
 
