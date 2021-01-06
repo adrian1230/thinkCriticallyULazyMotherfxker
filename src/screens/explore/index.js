@@ -19,7 +19,7 @@ const Explore = ({ navigation,props }) => {
             <View>
                 <TextInput
                     style={{
-                        backgroundColor:'grey',
+                        backgroundColor:'#c4c3c2',
                         width: '70%',
                         alignSelf: 'center',
                         borderRadius: 15,
