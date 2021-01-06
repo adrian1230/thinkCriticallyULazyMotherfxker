@@ -163,13 +163,6 @@ const Explore = ({ navigation }) => {
             "height": Image.resolveAssetSource(images._21).height + 100,
             "width": Image.resolveAssetSource(images._21).width
         },
-        {
-            "id": 21,
-            "name": "Backpack",
-            "img": images._1,
-            "height": Image.resolveAssetSource(images._1).height + 100,
-            "width": Image.resolveAssetSource(images._1).width
-        },
     ];
 
     return (
