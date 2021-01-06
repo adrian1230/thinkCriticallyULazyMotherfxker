@@ -10,7 +10,7 @@ import {
 } from 'react-native';
 import {images} from '../../../constants/index';
  
-const Explore = ({ navigation,props }) => {
+const Explore = ({ navigation }) => {
     const state = {
         search: '',
     }
@@ -18,6 +18,153 @@ const Explore = ({ navigation,props }) => {
     const data_ = [
         {
             "id": 0,
+            "name": "Backpack",
+            "img": images._1,
+            "height": Image.resolveAssetSource(images._1).height + 100,
+            "width": Image.resolveAssetSource(images._1).width
+        },
+        {
+            "id": 1,
+            "name": "G-String",
+            "img": images._2,
+            "height": Image.resolveAssetSource(images._2).height + 100,
+            "width": Image.resolveAssetSource(images._2).width
+        },
+        {
+            "id": 2,
+            "name": "Backpack",
+            "img": images._3,
+            "height": Image.resolveAssetSource(images._3).height + 100,
+            "width": Image.resolveAssetSource(images._3).width
+        },
+        {
+            "id": 3,
+            "name": "Backpack",
+            "img": images._4,
+            "height": Image.resolveAssetSource(images._4).height + 100,
+            "width": Image.resolveAssetSource(images._4).width
+        },
+        {
+            "id": 4,
+            "name": "Backpack",
+            "img": images._5,
+            "height": Image.resolveAssetSource(images._5).height + 100,
+            "width": Image.resolveAssetSource(images._5).width
+        },
+        {
+            "id": 5,
+            "name": "Backpack",
+            "img": images._6,
+            "height": Image.resolveAssetSource(images._6).height + 100,
+            "width": Image.resolveAssetSource(images._6).width
+        },
+        {
+            "id": 6,
+            "name": "Backpack",
+            "img": images._7,
+            "height": Image.resolveAssetSource(images._7).height + 100,
+            "width": Image.resolveAssetSource(images._7).width
+        },
+        {
+            "id": 7,
+            "name": "Backpack",
+            "img": images._8,
+            "height": Image.resolveAssetSource(images._8).height + 100,
+            "width": Image.resolveAssetSource(images._8).width
+        },
+        {
+            "id": 8,
+            "name": "Backpack",
+            "img": images._9,
+            "height": Image.resolveAssetSource(images._9).height + 100,
+            "width": Image.resolveAssetSource(images._9).width
+        },
+        {
+            "id": 9,
+            "name": "Backpack",
+            "img": images._10,
+            "height": Image.resolveAssetSource(images._10).height + 100,
+            "width": Image.resolveAssetSource(images._10).width
+        },
+        {
+            "id": 10,
+            "name": "Backpack",
+            "img": images._11,
+            "height": Image.resolveAssetSource(images._11).height + 100,
+            "width": Image.resolveAssetSource(images._11).width
+        },
+        {
+            "id": 11,
+            "name": "Backpack",
+            "img": images._12,
+            "height": Image.resolveAssetSource(images._12).height + 100,
+            "width": Image.resolveAssetSource(images._12).width
+        },
+        {
+            "id": 12,
+            "name": "Backpack",
+            "img": images._13,
+            "height": Image.resolveAssetSource(images._13).height + 100,
+            "width": Image.resolveAssetSource(images._13).width
+        },
+        {
+            "id": 13,
+            "name": "Backpack",
+            "img": images._14,
+            "height": Image.resolveAssetSource(images._14).height + 100,
+            "width": Image.resolveAssetSource(images._14).width
+        },
+        {
+            "id": 14,
+            "name": "Backpack",
+            "img": images._15,
+            "height": Image.resolveAssetSource(images._15).height + 100,
+            "width": Image.resolveAssetSource(images._15).width
+        },
+        {
+            "id": 15,
+            "name": "Backpack",
+            "img": images._16,
+            "height": Image.resolveAssetSource(images._16).height + 100,
+            "width": Image.resolveAssetSource(images._16).width
+        },
+        {
+            "id": 16,
+            "name": "Backpack",
+            "img": images._17,
+            "height": Image.resolveAssetSource(images._17).height + 100,
+            "width": Image.resolveAssetSource(images._17).width
+        },
+        {
+            "id": 17,
+            "name": "Backpack",
+            "img": images._18,
+            "height": Image.resolveAssetSource(images._18).height + 100,
+            "width": Image.resolveAssetSource(images._18).width
+        },
+        {
+            "id": 18,
+            "name": "Backpack",
+            "img": images._19,
+            "height": Image.resolveAssetSource(images._19).height + 100,
+            "width": Image.resolveAssetSource(images._19).width
+        },
+        {
+            "id": 19,
+            "name": "Backpack",
+            "img": images._20,
+            "height": Image.resolveAssetSource(images._20).height + 100,
+            "width": Image.resolveAssetSource(images._20).width
+        },
+        {
+            "id": 20,
+            "name": "Backpack",
+            "img": images._21,
+            "height": Image.resolveAssetSource(images._21).height + 100,
+            "width": Image.resolveAssetSource(images._21).width
+        },
+        {
+            "id": 21,
             "name": "Backpack",
             "img": images._1,
             "height": Image.resolveAssetSource(images._1).height + 100,
