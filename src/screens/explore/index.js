@@ -54,8 +54,9 @@ const Explore = ({ navigation,props }) => {
                     <View style={{
                         borderRadius: 20,
                         padding: 25,
+                        // margin: 25,
                         marginBottom: 20,
-                        height: '75%',
+                        height: 295+100,
                         backgroundColor: 'lightgray',
                     }}>
                         <Text
@@ -108,6 +109,7 @@ const styles = StyleSheet.create({
     image_: {
         position: 'relative',
         left: 35,
+        // width: '100%',
         zIndex: 2,
         top: 35,
     }
