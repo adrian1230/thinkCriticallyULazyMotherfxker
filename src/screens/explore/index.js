@@ -57,6 +57,14 @@ const Explore = ({ navigation,props }) => {
                         height: '75%',
                         backgroundColor: 'lightgray',
                     }}>
+                        <Text
+                            style={{
+                                fontWeight: '700',
+                                fontSize: 25
+                            }}
+                        >
+                            BackPack
+                        </Text>
                         <Image source={images._1} style={styles.image_} />
                         <View style={styles.Trapezoid}>
                         </View>
@@ -86,18 +94,21 @@ const styles = StyleSheet.create({
     Trapezoid: {
         width: 250,
         borderBottomColor: "gray",
-        borderBottomWidth: 110,
+        borderBottomWidth: 140,
         borderLeftWidth: 0,
-        borderRightWidth: 155,
+        borderRightWidth: 180,
         borderRadius: 20,
         borderRightColor: 'transparent',
         borderLeftColor: 'transparent',
         position: 'relative',
-        bottom: 100,
+        bottom: 120,
+        zIndex: 1
     },
     image_: {
         position: 'relative',
-        left: 15
+        left: 35,
+        zIndex: 2,
+        top: 35,
     }
 })
 
