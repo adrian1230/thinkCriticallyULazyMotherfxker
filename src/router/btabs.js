@@ -90,11 +90,6 @@ const ExploreStackNavigator = ({navigation}) => {
                             marginRight: 10
                         }}
                     >
-                        {/* <Button 
-                            onPress={()=>navigation.navigate('Cart')}
-                            title="Cart"
-                            color="red"                    
-                        /> */}
                         <TouchableOpacity
                             onPress={()=>navigation.navigate('Cart')}
                         >
@@ -144,14 +139,14 @@ const BottomTabNavigator = () => {
             <Tabs.Screen 
                 name="Explore" 
                 component={ExploreStackNavigator}
-                options={{
-                    tabBarLabel: 'Explore',
-                    tabBarIcon: () => (
-                        <MaterialCommunityIcons
-                            name="crosshairs"
-                        />
-                    )
-                }} 
+                // options={{
+                //     tabBarLabel: 'Explore',
+                //     tabBarIcon: () => (
+                //         <MaterialCommunityIcons
+                //             name="crosshairs"
+                //         />
+                //     )
+                // }} 
             />
             <Tabs.Screen name="Chat" component={ChatStackNavigator} />
             <Tabs.Screen name="Profile" component={ProfileStackNavigator} />
