@@ -8,7 +8,6 @@ import {
     Image,
     ScrollView
 } from 'react-native';
-console.disableYellowBox = true;
 import {images} from '../../../constants/index';
  
 const Explore = ({ navigation,props }) => {
@@ -16,7 +15,15 @@ const Explore = ({ navigation,props }) => {
         search: '',
     }
 
-    const {width,height} = Image.resolveAssetSource(images._2);
+    const data_ = [
+        {
+            "id": 0,
+            "name": "Backpack",
+            "img": images._1,
+            "height": Image.resolveAssetSource(images._1).height + 100,
+            "width": Image.resolveAssetSource(images._1).width
+        },
+    ];
 
     return (
         <SafeAreaView>
@@ -54,10 +61,9 @@ const Explore = ({ navigation,props }) => {
                     <View style={{
                         borderRadius: 20,
                         padding: 25,
-                        // margin: 25,
                         marginBottom: 20,
                         height: 295+100,
-                        backgroundColor: 'lightgray',
+                        backgroundColor: '#e6e8e6',
                     }}>
                         <Text
                             style={{
@@ -67,7 +73,18 @@ const Explore = ({ navigation,props }) => {
                         >
                             BackPack
                         </Text>
-                        <Image source={images._1} style={styles.image_} />
+                        <Image 
+                            source={images._2} 
+                            style={{
+                                position: 'relative',
+                                left: 35,
+                                width: 240,
+                                height: 240,
+                                zIndex: 2,
+                                top: 35,
+                            }}
+                            resizeMode="stretch" 
+                        />
                         <View style={styles.Trapezoid}>
                         </View>
                     </View>
@@ -87,15 +104,9 @@ const Explore = ({ navigation,props }) => {
 }
 
 const styles = StyleSheet.create({
-    // btn: {
-    //     width: '50%',
-    //     alignSelf: 'center',
-    //     marginTop: 15,
-    //     borderRadius: 25
-    // },
     Trapezoid: {
         width: 250,
-        borderBottomColor: "gray",
+        borderBottomColor: "lightgray",
         borderBottomWidth: 140,
         borderLeftWidth: 0,
         borderRightWidth: 180,
@@ -106,13 +117,12 @@ const styles = StyleSheet.create({
         bottom: 120,
         zIndex: 1
     },
-    image_: {
-        position: 'relative',
-        left: 35,
-        // width: '100%',
-        zIndex: 2,
-        top: 35,
-    }
+    // btn: {
+    //     width: '50%',
+    //     alignSelf: 'center',
+    //     marginTop: 15,
+    //     borderRadius: 25
+    // },
 })
 
 export default Explore;
