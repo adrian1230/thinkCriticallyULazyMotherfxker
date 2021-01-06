@@ -31,7 +31,16 @@ const Explore = ({ navigation,props }) => {
                     }}
                     // onChangeText={(search)=>this.setState({search})} 
                 />
-                <Text>asd</Text>
+                <View 
+                    style={{
+                        width:'70%',
+                        marginTop: 10,
+                        alignSelf:'center',
+                        height:'5%',
+                        backgroundColor:'grey'
+                    }}
+                >
+                </View>
                 {/* <Text>Explore</Text>
                 <View style={styles.btn}>
                     <Button
