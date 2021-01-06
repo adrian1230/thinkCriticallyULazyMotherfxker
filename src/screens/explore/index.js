@@ -33,11 +33,11 @@ const Explore = ({ navigation,props }) => {
                 />
                 <View 
                     style={{
-                        width:'70%',
-                        marginTop: 10,
+                        width:'75%',
+                        marginTop: 15,
                         alignSelf:'center',
-                        height:'5%',
-                        backgroundColor:'grey'
+                        height:'3%',
+                        backgroundColor:'lightgrey'
                     }}
                 >
                 </View>
