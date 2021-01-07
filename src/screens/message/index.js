@@ -4,9 +4,12 @@ import {
     SafeAreaView,
     TextInput,
     ScrollView,
-    Image
+    Image,
+    TouchableOpacity,
+    Text
 } from 'react-native';
 import {contact} from '../../../constants/index'; 
+import {chat} from '../../../constants/index';
 
 const Chat = ({ navigation }) => {
     return (
@@ -36,25 +39,49 @@ const Chat = ({ navigation }) => {
                         marginTop: 20
                     }}
                 >
-                    <View
-                        style={{
-                            height: '100%',
-                            padding: 5,
-                            borderRadius: 20,
-                            borderColor: 'gray',
-                            borderWidth: 3,
-                            backgroundColor: 'lightgray'
-                        }}
-                    >
-                        <Image
-                            style={{
-                                width: 65,
-                                height: 65,
-                                borderRadius: 50
-                            }}
-                            source={contact.ppl[1].icon} 
-                        />
-                    </View>
+                    {
+                        contact.ppl.map(
+                            (val,ind) =>
+                                <TouchableOpacity style={{marginBottom:10}}>
+                                    <View
+                                        style={{
+                                            padding: 5,
+                                            borderRadius: 20,
+                                            borderColor: 'gray',
+                                            borderWidth: 3,
+                                            backgroundColor: 'lightgray',
+                                            flexDirection: 'row'
+                                        }}
+                                    >
+                                        <View style={{flexDirection: 'row'}}>
+                                            <Image
+                                                style={{
+                                                    width: 65,
+                                                    height: 65,
+                                                    borderRadius: 50
+                                                }}
+                                                source={val.icon} 
+                                            />
+                                            <Text 
+                                                style={{
+                                                    fontSize:20,
+                                                    marginTop: 15,
+                                                    marginLeft: 5,
+                                                }}
+                                            >
+                                                {val.name}
+                                            </Text>
+                                        </View>
+                                        <View>
+                                            <Text>
+                                                
+                                            </Text>
+                                        </View>
+                                    </View>
+                                </TouchableOpacity>
+                        )
+                    }
+                    <View style={{height:130}}></View>
                 </ScrollView>
             </View>
         </SafeAreaView>
