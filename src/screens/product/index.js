@@ -5,12 +5,14 @@ import {
     Text,
     ScrollView
 } from 'react-native';
+import {stats} from '../../../constants/index';
 
-const Product = ({ navigation }) => {
+const Product = ({ route }) => {
     return (
         <SafeAreaView>
             <ScrollView>
                 <Text>Product</Text>
+                <Text>{route.params.itemId}</Text>
             </ScrollView>
         </SafeAreaView>
     );
