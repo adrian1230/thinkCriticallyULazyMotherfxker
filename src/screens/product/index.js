@@ -72,6 +72,19 @@ const Product = ({ route }) => {
                             {stats.data_[route.params.itemId].price * count}
                         </Text>
                     </View>
+                    <View 
+                        style={{
+                            width:'50%',
+                            marginLeft:25,
+                            marginTop:10,
+                        }}
+                    >
+                        <Button 
+                            color="red"
+                            title="Add to Cart"
+                            onPress={()=>{}}
+                        />
+                    </View>
                 </View>
             </ScrollView>
         </SafeAreaView>
