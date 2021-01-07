@@ -42,7 +42,7 @@ const Chat = ({ navigation }) => {
                     {
                         contact.ppl.map(
                             (val,ind) =>
-                                <TouchableOpacity style={{marginBottom:10}}>
+                                <TouchableOpacity key={ind} style={{marginBottom:10}}>
                                     <View
                                         style={{
                                             padding: 5,
