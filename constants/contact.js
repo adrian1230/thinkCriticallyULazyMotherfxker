@@ -50,3 +50,5 @@ export const ppl = [
         'groupchat': false,
     },
 ];
+
+export default {ppl};
