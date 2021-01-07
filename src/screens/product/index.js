@@ -61,8 +61,16 @@ const Product = ({ route }) => {
                             <Text style={{marginLeft:20,fontSize:25}}>
                                 {count}
                             </Text>
-                            <Button title="-" onPress={handleDecrease} />
+                            <View style={{marginLeft:20}}>
+                                <Button title="-" onPress={handleDecrease} />
+                            </View>
                         </View>
+                    </View>
+                    <View style={{marginLeft:25,marginTop:5,flexDirection:'row'}}>
+                        <Text style={{fontWeight:'700',fontSize:29}}>Final Price:</Text>
+                        <Text style={{fontSize:29,marginLeft:15,fontWeight:'700',alignSelf:'center'}}>
+                            {stats.data_[route.params.itemId].price * count}
+                        </Text>
                     </View>
                 </View>
             </ScrollView>
