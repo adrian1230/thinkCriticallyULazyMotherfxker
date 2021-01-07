@@ -9,7 +9,6 @@ import {
     Text
 } from 'react-native';
 import {contact} from '../../../constants/index'; 
-import {chat} from '../../../constants/index';
 
 const Chat = ({ navigation }) => {
     return (
@@ -70,11 +69,6 @@ const Chat = ({ navigation }) => {
                                                 }}
                                             >
                                                 {val.name}
-                                            </Text>
-                                        </View>
-                                        <View>
-                                            <Text>
-                                                {chat.chathistory[ind].id}
                                             </Text>
                                         </View>
                                     </View>
