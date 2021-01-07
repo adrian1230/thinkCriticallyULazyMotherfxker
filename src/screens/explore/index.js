@@ -44,6 +44,7 @@ const Explore = ({ navigation }) => {
                             (val,ind) =>
                                 <TouchableOpacity 
                                     key={ind}
+                                    onPress={()=> navigation.navigate('Product')}
                                 >
                                     <View 
                                         style={{

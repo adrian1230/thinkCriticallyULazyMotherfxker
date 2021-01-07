@@ -1,12 +1,17 @@
 import * as React from 'react';
-import {View,SafeAreaView,Text} from 'react-native';
+import {
+    View,
+    SafeAreaView,
+    Text,
+    ScrollView
+} from 'react-native';
 
 const Product = ({ navigation }) => {
     return (
         <SafeAreaView>
-            <View>
+            <ScrollView>
                 <Text>Product</Text>
-            </View>
+            </ScrollView>
         </SafeAreaView>
     );
 }
