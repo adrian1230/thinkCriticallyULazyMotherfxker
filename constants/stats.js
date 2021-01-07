@@ -8,7 +8,7 @@ export const data_ = [
         "id": 0,
         "name": "Backpack",
         "img": images._1,
-        'description': 'Backpack is good; Bag sucks',
+        'description': 'Backpack is good; Bag sucks. Backpack is good; Bag sucks. Backpack is good; Bag sucks. Backpack is good; Bag sucks. Backpack is good; Bag sucks. Backpack is good; Bag sucks. Backpack is good; Bag sucks. Backpack is good; Bag sucks.',
         'price': 158,
         "height": Image.resolveAssetSource(images._1).height + 100,
         "width": Image.resolveAssetSource(images._1).width
@@ -17,7 +17,7 @@ export const data_ = [
         "id": 1,
         "name": "G-String",
         "img": images._2,
-        'description': 'G-String is good; Neon Strings suck',
+        'description': 'G-String is good; Neon Strings suck. G-String is good; Neon Strings suck. G-String is good; Neon Strings suck. G-String is good; Neon Strings suck. G-String is good; Neon Strings suck. G-String is good; Neon Strings suck. G-String is good; Neon Strings suck.',
         'price': 1580,
         "height": Image.resolveAssetSource(images._2).height + 100,
         "width": Image.resolveAssetSource(images._2).width
@@ -26,7 +26,7 @@ export const data_ = [
         "id": 2,
         "name": "Switch",
         "img": images._3,
-        'description': 'Switch is good; ps3 sucks',
+        'description': 'Switch is good; ps3 sucks. Switch is good; ps3 sucks. Switch is good; ps3 sucks. Switch is good; ps3 sucks. Switch is good; ps3 sucks. Switch is good; ps3 sucks. Switch is good; ps3 sucks.',
         'price': 15,
         "height": Image.resolveAssetSource(images._3).height + 100,
         "width": Image.resolveAssetSource(images._3).width
@@ -35,7 +35,7 @@ export const data_ = [
         "id": 3,
         "name": "Vibrator",
         "img": images._4,
-        'description': 'Vibrator is good; rough fingering sucks',
+        'description': 'Vibrator is good; rough fingering sucks. Vibrator is good; rough fingering sucks. Vibrator is good; rough fingering sucks. Vibrator is good; rough fingering sucks. Vibrator is good; rough fingering sucks. Vibrator is good; rough fingering sucks.',
         'price': 158,
         "height": Image.resolveAssetSource(images._4).height + 100,
         "width": Image.resolveAssetSource(images._4).width

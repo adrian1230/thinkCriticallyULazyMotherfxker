@@ -4,8 +4,10 @@ import {
     SafeAreaView,
     Text,
     ScrollView,
-    Image
+    Image,
+    Button
 } from 'react-native';
+import { TouchableHighlight, TouchableOpacity } from 'react-native-gesture-handler';
 import {stats} from '../../../constants/index';
 
 const Product = ({ route }) => {
@@ -32,6 +34,18 @@ const Product = ({ route }) => {
                     <Text style={{marginTop:2,fontSize:14,alignSelf:'center'}}>
                         {stats.data_[route.params.itemId].description}
                     </Text>
+                    <View style={{marginLeft:25,marginTop:5,flexDirection:'row'}}>
+                        <Text style={{fontWeight:'700',fontSize:29}}>Price:</Text>
+                        <Text style={{fontSize:29,marginLeft:15,fontWeight:'700',alignSelf:'center'}}>
+                            {stats.data_[route.params.itemId].price}
+                        </Text>
+                    </View>
+                    <View style={{marginLeft:25,marginTop:5,flexDirection:'row'}}>
+                        <Text style={{fontWeight:'700',fontSize:29}}>Quantity:</Text>
+                        <View style={{marginLeft:15,alignSelf:'center'}}>
+                            <TouchableOpacity></TouchableOpacity>
+                        </View>
+                    </View>
                 </View>
             </ScrollView>
         </SafeAreaView>
