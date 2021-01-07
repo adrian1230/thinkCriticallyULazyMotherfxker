@@ -74,7 +74,7 @@ const Chat = ({ navigation }) => {
                                         </View>
                                         <View>
                                             <Text>
-                                                
+                                                {chat.chathistory[ind].id}
                                             </Text>
                                         </View>
                                     </View>
