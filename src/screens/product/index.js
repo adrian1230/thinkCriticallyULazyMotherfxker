@@ -7,14 +7,24 @@ import {
     Image,
     Button
 } from 'react-native';
-import { TouchableHighlight, TouchableOpacity } from 'react-native-gesture-handler';
 import {stats} from '../../../constants/index';
-import InputSpinner from "react-native-input-spinner";
 
 const Product = ({ route }) => {
-    const state = {
-        quan: 0,
-    }
+    const [count, setCount] = React.useState(0);
+ 
+    const handleIncrease = () => {
+      setCount(count + 1);
+    };
+   
+    const handleDecrease = () => {
+        if (count == 0) {
+            return null;
+        }
+        else {
+            setCount(count - 1);
+        }
+    };
+
     return (
         <SafeAreaView>
             <ScrollView>
@@ -46,18 +56,12 @@ const Product = ({ route }) => {
                     </View>
                     <View style={{marginLeft:25,marginTop:5,flexDirection:'row'}}>
                         <Text style={{fontWeight:'700',fontSize:29}}>Quantity:</Text>
-                        <View style={{marginLeft:15,alignSelf:'center'}}>
-                            <InputSpinner 
-                                min={0}
-                                step={1}
-                                colorMax={"#f04048"}
-                                colorMin={"#40c5f4"}
-                                value={state.quan}
-                                onChange={() => {
-                                    state.quan = state.quan + 1
-                                }}
-                            />
-                            <Text>{state.quan}</Text>
+                        <View style={{marginLeft:15,flexDirection: 'row',alignSelf:'center'}}>
+                            <Button title="+" onPress={handleIncrease} />
+                            <Text style={{marginLeft:20,fontSize:25}}>
+                                {count}
+                            </Text>
+                            <Button title="-" onPress={handleDecrease} />
                         </View>
                     </View>
                 </View>
