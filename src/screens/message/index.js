@@ -29,6 +29,7 @@ const Chat = ({ navigation }) => {
                     }}
                     placeholder="Search Chat" 
                 />
+                <ScrollView></ScrollView>
             </View>
         </SafeAreaView>
     );

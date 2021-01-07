@@ -5,6 +5,8 @@ import Explore from '../screens/explore/index';
 import Chat from "../screens/message/index";
 import Cart from "../screens/cart/index";
 import Profile from '../screens/profile/index';
+import Product from '../screens/product/index';
+import Chatroom from '../screens/chatroom/index';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import {
     Image, 
@@ -107,6 +109,7 @@ const ExploreStackNavigator = ({navigation}) => {
         >
             <Stack.Screen name="Explore" component={Explore} />
             <Stack.Screen name="Cart" component={Cart} />
+            <Stack.Screen name="Product" component={Product} />
         </Stack.Navigator>
     )
 }
@@ -123,6 +126,7 @@ const ChatStackNavigator = () => {
     return (
         <Stack.Navigator screenOptions={{headerTitle: props => <ChatTitle /> }}>
             <Stack.Screen name="Chat" component={Chat} />
+            <Stack.Screen name="Chatroom" component={Chatroom} />
         </Stack.Navigator>
     )
 }
