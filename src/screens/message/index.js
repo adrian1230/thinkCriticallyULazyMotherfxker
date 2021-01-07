@@ -3,8 +3,10 @@ import {
     View,
     SafeAreaView,
     TextInput,
-    ScrollView
+    ScrollView,
+    Image
 } from 'react-native';
+import {contact} from '../../../constants/index'; 
 
 const Chat = ({ navigation }) => {
     return (
@@ -29,7 +31,25 @@ const Chat = ({ navigation }) => {
                     }}
                     placeholder="Search Chat" 
                 />
-                <ScrollView></ScrollView>
+                <ScrollView>
+                    <View
+                        style={{
+                            height: '15%',
+                            borderRadius: 20,
+                            borderColor: 'gray',
+                            borderWidth: 3,
+                            backgroundColor: 'lightgray'
+                        }}
+                    >
+                        <Image
+                            style={{
+                                width: 50,
+                                height: 50
+                            }}
+                            source={require('../../../assets/chats/abc.jpg')} 
+                        />
+                    </View>
+                </ScrollView>
             </View>
         </SafeAreaView>
     );
