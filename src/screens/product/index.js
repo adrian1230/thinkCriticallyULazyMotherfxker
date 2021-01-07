@@ -9,8 +9,12 @@ import {
 } from 'react-native';
 import { TouchableHighlight, TouchableOpacity } from 'react-native-gesture-handler';
 import {stats} from '../../../constants/index';
+import InputSpinner from "react-native-input-spinner";
 
 const Product = ({ route }) => {
+    const state = {
+        quan: 0,
+    }
     return (
         <SafeAreaView>
             <ScrollView>
@@ -43,7 +47,17 @@ const Product = ({ route }) => {
                     <View style={{marginLeft:25,marginTop:5,flexDirection:'row'}}>
                         <Text style={{fontWeight:'700',fontSize:29}}>Quantity:</Text>
                         <View style={{marginLeft:15,alignSelf:'center'}}>
-                            <TouchableOpacity></TouchableOpacity>
+                            <InputSpinner 
+                                min={0}
+                                step={1}
+                                colorMax={"#f04048"}
+                                colorMin={"#40c5f4"}
+                                value={state.quan}
+                                onChange={() => {
+                                    state.quan = state.quan + 1
+                                }}
+                            />
+                            <Text>{state.quan}</Text>
                         </View>
                     </View>
                 </View>
