@@ -2,7 +2,8 @@ import * as React from 'react';
 import {
     View,
     SafeAreaView,
-    TextInput
+    TextInput,
+    ScrollView
 } from 'react-native';
 
 const Chat = ({ navigation }) => {
