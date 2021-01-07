@@ -31,10 +31,15 @@ const Chat = ({ navigation }) => {
                     }}
                     placeholder="Search Chat" 
                 />
-                <ScrollView>
+                <ScrollView
+                    style={{
+                        marginTop: 20
+                    }}
+                >
                     <View
                         style={{
-                            height: '15%',
+                            height: '100%',
+                            padding: 5,
                             borderRadius: 20,
                             borderColor: 'gray',
                             borderWidth: 3,
@@ -43,10 +48,11 @@ const Chat = ({ navigation }) => {
                     >
                         <Image
                             style={{
-                                width: 50,
-                                height: 50
+                                width: 65,
+                                height: 65,
+                                borderRadius: 50
                             }}
-                            source={require('../../../assets/chats/abc.jpg')} 
+                            source={contact.ppl[1].icon} 
                         />
                     </View>
                 </ScrollView>
