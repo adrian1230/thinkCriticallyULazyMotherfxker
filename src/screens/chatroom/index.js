@@ -33,8 +33,7 @@ const Chatroom = ({ route }) => {
                         color: 'white',
                         fontWeight: '600',
                         fontSize: 15
-                    }}
-                    placeholder="Search Chat" 
+                    }} 
                 />
             </View>
         </SafeAreaView>
