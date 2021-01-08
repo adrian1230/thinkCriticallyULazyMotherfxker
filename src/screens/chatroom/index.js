@@ -16,21 +16,24 @@ const Chatroom = ({ route }) => {
                 </Text>
             </View>
             <ScrollView
-                style={{height:'75%'}}
+                style={{
+                    height:'78%',
+                    backgroundColor: 'floralwhite'
+                }}
             >
                 {/* {
                     chat.chathistory[route.params.itemId].id
                     )
                 } */}
             </ScrollView>
-            <View>
+            <View style={{height:70,backgroundColor:'grey'}}>
                 <TextInput
                     style={{
                         backgroundColor:'#c4c3c2',
                         width: '70%',
                         alignSelf: 'center',
                         borderRadius: 15,
-                        marginTop: 15,
+                        marginTop: 5,
                         paddingLeft: 20,
                         color: 'white',
                         fontWeight: '600',
