@@ -1,5 +1,6 @@
 import * as React from 'react';
 import {View,SafeAreaView,Text,ScrollView, Image} from 'react-native';
+import { TextInput } from 'react-native-gesture-handler';
 import {chat,contact} from '../../../constants/index';
 
 const Chatroom = ({ route }) => {
@@ -20,6 +21,22 @@ const Chatroom = ({ route }) => {
                     )
                 } */}
             </ScrollView>
+            <View>
+                <TextInput
+                    style={{
+                        backgroundColor:'#c4c3c2',
+                        width: '70%',
+                        alignSelf: 'center',
+                        borderRadius: 15,
+                        marginTop: 15,
+                        paddingLeft: 20,
+                        color: 'white',
+                        fontWeight: '600',
+                        fontSize: 15
+                    }}
+                    placeholder="Search Chat" 
+                />
+            </View>
         </SafeAreaView>
     );
 }
