@@ -15,7 +15,9 @@ const Chatroom = ({ route }) => {
                     {contact.ppl[route.params.itemId].name}
                 </Text>
             </View>
-            <ScrollView>
+            <ScrollView
+                style={{height:'75%'}}
+            >
                 {/* {
                     chat.chathistory[route.params.itemId].id
                     )
