@@ -1,8 +1,6 @@
 export const chathistory = [
     {
         'id': 0,
-        'name': 'abc',
-        'groupchat': true,
         'chats': { 
             '2018-03-18 09:18:23': [
                 {
@@ -27,8 +25,6 @@ export const chathistory = [
     },
     {
         'id': 1,
-        'name': 'adrian',
-        'groupchat': false,
         'chats': { 
             '2018-03-18 09:18:23': [
                 {
@@ -46,8 +42,6 @@ export const chathistory = [
     },
     {
         'id': 2,
-        'name': 'abhasTam',
-        'groupchat': true,
         'chats': { 
             '2018-03-18 09:18:23': [
                 {
@@ -77,8 +71,6 @@ export const chathistory = [
     },
     {
         'id': 3,
-        'name': 'Vivian',
-        'groupchat': true,
         'chats': {
             '2018-03-18 09:18:23': [
                 {
@@ -96,8 +88,6 @@ export const chathistory = [
     },
     {
         'id': 4,
-        'name': 'Bus',
-        'groupchat': true,
         'chats': { 
             '2018-03-18 09:18:23': [
                 {
@@ -115,8 +105,6 @@ export const chathistory = [
     },
     {
         'id': 5,
-        'name': 'John',
-        'groupchat': false,
         'chats': { 
             '2018-03-18 09:18:23': [
                 {
@@ -134,8 +122,6 @@ export const chathistory = [
     },
     {
         'id': 6,
-        'name': 'Calvin',
-        'groupchat': false,
         'chats': { 
             '2018-03-18 09:18:23': [
                 {
@@ -153,8 +139,6 @@ export const chathistory = [
     },
     {
         'id': 7,
-        'name': 'Devid',
-        'groupchat': false,
         'chats': { 
             '2018-03-18 09:18:23': [
                 {
@@ -172,8 +156,6 @@ export const chathistory = [
     },
     {
         'id': 8,
-        'name': 'Kol',
-        'groupchat': true,
         'chats': { 
             '2018-03-18 09:18:23': [
                 {
@@ -191,8 +173,6 @@ export const chathistory = [
     },
     {
         'id': 9,
-        'name': 'Bitch',
-        'groupchat': false,
         'chats': { 
             '2018-03-18 09:18:23': [
                 {

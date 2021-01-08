@@ -41,7 +41,20 @@ const Chat = ({ navigation }) => {
                     {
                         contact.ppl.map(
                             (val,ind) =>
-                                <TouchableOpacity key={ind} style={{marginBottom:10}}>
+                                <TouchableOpacity 
+                                    key={ind} 
+                                    onPress={
+                                        ()=> 
+                                        navigation.navigate(
+                                            'Chatroom',
+                                            {
+                                                itemId: val.id,
+                                                otherParam: 'anything you want love'
+                                            }
+                                        )
+                                    }
+                                    style={{marginBottom:10}}
+                                >
                                     <View
                                         style={{
                                             padding: 5,
