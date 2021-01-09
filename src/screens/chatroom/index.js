@@ -21,10 +21,6 @@ const Chatroom = ({ route }) => {
                     backgroundColor: 'floralwhite'
                 }}
             >
-                {/* {
-                    chat.chathistory[route.params.itemId].id
-                    )
-                } */}
             </ScrollView>
             <View style={{height:70,backgroundColor:'grey'}}>
                 <TextInput
