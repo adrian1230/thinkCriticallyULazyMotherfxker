@@ -11,13 +11,15 @@ import {
   StatusBar,
 } from 'react-native';
 
+import Navigation from './src/router/index';
 import Splash from './src/screens/splash/index';
 
 const App = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
-      <Splash />
+      {/* <Splash /> */}
+      <Navigation />
     </>
   );
 };
