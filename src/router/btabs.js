@@ -21,40 +21,6 @@ const Stack = createStackNavigator();
 
 const Tabs = createBottomTabNavigator();
 
-// const screenOptionStyle = {
-//     headerStyle: {
-//       backgroundColor: "red",
-//     },
-//     headerTintColor: "white",
-//     headerBackTitle: "Back",
-// };
-
-// function ExploreTitle() {
-//     return (
-//         <View style={{
-//             flexDirection: 'row',
-//             // display: 'flex',
-//             justifyContent: 'space-between'
-
-//         }}>
-//             <Image 
-//                 style={{width:120,height:50,alignSelf:'flex-start'}}
-//                 source={icons.explore}
-//             />
-//             <View
-//                 style={{marginTop:8 }}
-//             >
-//                 <Button
-//                     title="Cart"
-//                     onPress={
-//                         () => {}
-//                     } 
-//                 />
-//             </View>
-//         </View>
-//     )
-// }
-
 function ExploreTitle() {
     return(
         <Image
@@ -143,14 +109,6 @@ const BottomTabNavigator = () => {
             <Tabs.Screen 
                 name="Explore" 
                 component={ExploreStackNavigator}
-                // options={{
-                //     tabBarLabel: 'Explore',
-                //     tabBarIcon: () => (
-                //         <MaterialCommunityIcons
-                //             name="crosshairs"
-                //         />
-                //     )
-                // }} 
             />
             <Tabs.Screen name="Chat" component={ChatStackNavigator} />
             <Tabs.Screen name="Profile" component={ProfileStackNavigator} />
