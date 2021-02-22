@@ -1,19 +1,6 @@
 import * as React from 'react';
 import {createDrawerNavigator} from '@react-navigation/drawer';
-import Explore from '../screens/explore/index';
-import Profile from '../screens/profile/index';
-import 'react-native-gesture-handler';
-import BottomTabNavigator from './btabs';
-
-const Drawer = createDrawerNavigator();
-
-function Path() {
-    return(
-        <Drawer.Navigator initialRouteName="Explore">
-            <Drawer.Screen name="Home" component={BottomTabNavigator} />
-            <Drawer.Screen name="Profile" component={Profile} />
-        </Drawer.Navigator> 
-    );
+import 
 }
 
 export default Path;
